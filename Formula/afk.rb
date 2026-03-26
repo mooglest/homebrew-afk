@@ -41,6 +41,24 @@ class Afk < Formula
     error_log_path var/"log/afk.log"
   end
 
+  def caveats
+    <<~EOS
+      Before starting the AFK daemon, set your server token in ~/.afk/config:
+
+        server_token=<your-token>
+
+      Then start the service (auto-starts on login):
+
+        brew services start afk
+
+      The AFK web UI is available at http://afk.mooglest.com
+
+      NOTE: The binary is currently unsigned. If macOS blocks it, run:
+
+        xattr -dr com.apple.quarantine #{opt_bin}/afk
+    EOS
+  end
+
   test do
     system "#{bin}/afk", "--version"
   end
