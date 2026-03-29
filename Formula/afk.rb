@@ -1,6 +1,6 @@
 class Afk < Formula
   desc "Autonomous Flow Kit daemon and CLI"
-  homepage "https://github.com/mooglest/afk"
+  homepage "https://afk.mooglest.com"
   version "0.0.17"
 
   on_macos do
@@ -52,6 +52,8 @@ class Afk < Formula
     <<~EOS
       AFK stores user data in ~/.afk
       The directory will be created automatically on first run.
+
+      Please login to https://afk.mooglest.com and update the api_key in ~/.afk/config
     EOS
   end
 
