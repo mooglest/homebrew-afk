@@ -1,33 +1,33 @@
 class Afk < Formula
   desc "Autonomous Flow Kit daemon and CLI"
   homepage "https://github.com/mooglest/afk"
-  version "0.0.4"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mooglest/afk/releases/download/0.0.4/afk-macos-arm64.tar.gz"
-      sha256 "20a3b394881adda061679ef4530d0234356509baf46758099bc145dcb1d5e569"
+      url "https://github.com/mooglest/afk/releases/download/0.0.6/afk-macos-arm64.tar.gz"
+      sha256 "2a31dcdca1355662fa0489361284c510dd7a30b2839fc2ff1513695d45d38f3e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/mooglest/afk/releases/download/0.0.4/afk-linux-arm64.tar.gz"
-      sha256 "ada8f6cac9382f349b0ecfbe547a733f34d2f80ffce6b6215edefdcc8e7f24f8"
+      url "https://github.com/mooglest/afk/releases/download/0.0.6/afk-linux-arm64.tar.gz"
+      sha256 "9222ff1e301c68c3eb31b499baef261a9a01ec307520126ad48e6ab5b9bc49a8"
     else
-      url "https://github.com/mooglest/afk/releases/download/0.0.4/afk-linux-amd64.tar.gz"
-      sha256 "f6f52e73759028d03f89a6fa58b479d13ce8133ee4de4bbebd42c5f1020a8040"
+      url "https://github.com/mooglest/afk/releases/download/0.0.6/afk-linux-amd64.tar.gz"
+      sha256 "c0765eb337fceab5728e322fe92edd2715bd0bc03d5a9c2318702d62d98be271"
     end
   end
 
   resource "afk-linux-amd64" do
-    url "https://github.com/mooglest/afk/releases/download/0.0.4/afk-linux-amd64.tar.gz"
-    sha256 "f6f52e73759028d03f89a6fa58b479d13ce8133ee4de4bbebd42c5f1020a8040"
+    url "https://github.com/mooglest/afk/releases/download/0.0.6/afk-linux-amd64.tar.gz"
+    sha256 "c0765eb337fceab5728e322fe92edd2715bd0bc03d5a9c2318702d62d98be271"
   end
 
   resource "afk-linux-arm64" do
-    url "https://github.com/mooglest/afk/releases/download/0.0.4/afk-linux-arm64.tar.gz"
-    sha256 "ada8f6cac9382f349b0ecfbe547a733f34d2f80ffce6b6215edefdcc8e7f24f8"
+    url "https://github.com/mooglest/afk/releases/download/0.0.6/afk-linux-arm64.tar.gz"
+    sha256 "9222ff1e301c68c3eb31b499baef261a9a01ec307520126ad48e6ab5b9bc49a8"
   end
 
   def install
