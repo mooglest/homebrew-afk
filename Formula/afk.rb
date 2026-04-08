@@ -6,28 +6,28 @@ class Afk < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.53/afk-macos-arm64.tar.gz"
-      sha256 "723c9a0997cf3562b26460044c1b911c8de16ed8a791eb8b9b9578e2bd8e129b"
+      sha256 "4afb03c8780b5eb111bd91e7f3129a9bf7e883ea2bb0099fedf029dab3b4f206"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.53/afk-linux-arm64.tar.gz"
-      sha256 "3f0bd2ba5158c79ee2047220fc3946648e3bf736be35dc61c026ef022801b3f4"
+      sha256 "4127fb04b904bc75f26615b4075e8b9f46a762deaad5fd7d4b23e3fc716c28c3"
     else
       url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.53/afk-linux-amd64.tar.gz"
-      sha256 "9902e75d4f3e8d168295124721c91bbddd25563e2c341091af122783d852de2f"
+      sha256 "f75c6e9276b0e021875d41225e1189a0e6754ec06f45681733cdccd531fed3fb"
     end
   end
 
   resource "afk-linux-amd64" do
     url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.53/afk-linux-amd64.tar.gz"
-    sha256 "9902e75d4f3e8d168295124721c91bbddd25563e2c341091af122783d852de2f"
+    sha256 "f75c6e9276b0e021875d41225e1189a0e6754ec06f45681733cdccd531fed3fb"
   end
 
   resource "afk-linux-arm64" do
     url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.53/afk-linux-arm64.tar.gz"
-    sha256 "3f0bd2ba5158c79ee2047220fc3946648e3bf736be35dc61c026ef022801b3f4"
+    sha256 "4127fb04b904bc75f26615b4075e8b9f46a762deaad5fd7d4b23e3fc716c28c3"
   end
 
   def install
