@@ -1,33 +1,33 @@
 class Afk < Formula
   desc "Autonomous Flow Kit daemon and CLI"
   homepage "https://afk.mooglest.com"
-  version "0.1.9-SNAPSHOT"
+  version "0.1.12"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mooglest/homebrew-tap/releases/download/0.1.9-SNAPSHOT/afk-macos-arm64.tar.gz"
-      sha256 "cdb56e86fd7a09a7851b089a3de3237a68cdb29e66310be1efef4311253f70db"
+      url "https://github.com/mooglest/homebrew-tap/releases/download/0.1.12/afk-macos-arm64.tar.gz"
+      sha256 "f6354b1fc0c2399f6c4f5f3259a540d34aea8ff4d957d618f1cb55964f439dc3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/mooglest/homebrew-tap/releases/download/0.1.9-SNAPSHOT/afk-linux-arm64.tar.gz"
-      sha256 "aa8f65aba2c3f8e905376592759293c36abb6551f7e39441244e24286d1ad9a6"
+      url "https://github.com/mooglest/homebrew-tap/releases/download/0.1.12/afk-linux-arm64.tar.gz"
+      sha256 "f664818beaea50de539218b2d6c24103905c9c572b0352ad326aaf91bede511f"
     else
-      url "https://github.com/mooglest/homebrew-tap/releases/download/0.1.9-SNAPSHOT/afk-linux-amd64.tar.gz"
-      sha256 "6731ff114f048f03116638cc570ebe81ffafd21d5c3d13a71f1f3e85d8fc7a66"
+      url "https://github.com/mooglest/homebrew-tap/releases/download/0.1.12/afk-linux-amd64.tar.gz"
+      sha256 "a29aaeec976c339c91859aec5401388e24bfe8c953c277c794144bacdcec8398"
     end
   end
 
   resource "afk-linux-amd64" do
-    url "https://github.com/mooglest/homebrew-tap/releases/download/0.1.9-SNAPSHOT/afk-linux-amd64.tar.gz"
-    sha256 "6731ff114f048f03116638cc570ebe81ffafd21d5c3d13a71f1f3e85d8fc7a66"
+    url "https://github.com/mooglest/homebrew-tap/releases/download/0.1.12/afk-linux-amd64.tar.gz"
+    sha256 "a29aaeec976c339c91859aec5401388e24bfe8c953c277c794144bacdcec8398"
   end
 
   resource "afk-linux-arm64" do
-    url "https://github.com/mooglest/homebrew-tap/releases/download/0.1.9-SNAPSHOT/afk-linux-arm64.tar.gz"
-    sha256 "aa8f65aba2c3f8e905376592759293c36abb6551f7e39441244e24286d1ad9a6"
+    url "https://github.com/mooglest/homebrew-tap/releases/download/0.1.12/afk-linux-arm64.tar.gz"
+    sha256 "f664818beaea50de539218b2d6c24103905c9c572b0352ad326aaf91bede511f"
   end
 
   def install
